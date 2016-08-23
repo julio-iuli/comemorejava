@@ -14,18 +14,48 @@
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Nome" />
-            <Label text="CPF" GridPane.rowIndex="1" />
-            <Label text="RG" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" />
+            <Label text="Nome" GridPane.rowIndex="1" />
+            <Label text="CPF" GridPane.rowIndex="2" />
+            <Label text="RG" GridPane.rowIndex="3" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Orgao Emissor" GridPane.rowIndex="4" />
+            <Label text="Tel. Res." GridPane.rowIndex="5" />
+            <Label text="Tel. Cel." GridPane.rowIndex="6" />
+            <Label text="email" GridPane.rowIndex="7" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" selected="true" text="PF">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="pessoa" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="PJ" toggleGroup="$pessoa" />
+               </children>
+            </HBox>
+            <Label text="Data Nasc." GridPane.rowIndex="8" />
+            <Label text="Recomendaçoes" GridPane.rowIndex="9" />
+            <Label text="Nome" GridPane.rowIndex="10" />
+            <Label text="Data. Nasc." GridPane.rowIndex="11" />
          </children>
       </GridPane>
    </center>
