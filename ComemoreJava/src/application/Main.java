@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
-// texto adicionado dentro do git hub
+// texto adicionado dentro do git hub e commitado com comentário
 public class Main extends Application {
 	static BorderPane root = new BorderPane();
 	@Override
