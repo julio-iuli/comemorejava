@@ -1,5 +1,8 @@
 package view;
 
+import java.io.IOException;
+import java.security.acl.Group;
+
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,6 +33,21 @@ public class RootController {
 			hBox.setAlignment(Pos.CENTER);
 			Main.getRoot().setCenter(hBox);
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@FXML
+	private void abrirConfiguracao() {
+		FXMLLoader loader3 = new FXMLLoader();
+		loader3.setLocation(Main.class.getResource("../view/Configuracao.fxml"));
+		AnchorPane config = new AnchorPane();
+		try {
+			config = loader3.load();
+			Main.getRoot().setCenter(config);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
