@@ -3,7 +3,10 @@ package view;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.SplitPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 
@@ -22,11 +25,10 @@ public class RootController {
 			BorderPane endereco = new BorderPane();
 			endereco = loader2.load();
 			
-			HBox hbox = new HBox();
-			hbox.setAlignment(Pos.CENTER);
-			hbox.getChildren().addAll(clienteEdit, endereco);
-			
-			Main.getRoot().setCenter(hbox);
+			HBox hBox = new HBox();
+			hBox.getChildren().addAll(clienteEdit, endereco);
+			hBox.setAlignment(Pos.CENTER);
+			Main.getRoot().setCenter(hBox);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
