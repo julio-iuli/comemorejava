@@ -1,73 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+<GridPane alignment="CENTER" hgap="5.0" prefHeight="432.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Nome" GridPane.rowIndex="1" />
+      <Label text="CPF" GridPane.rowIndex="2" />
+      <Label text="RG" GridPane.rowIndex="3" />
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Orgao Emissor" GridPane.rowIndex="4" />
+      <Label text="Tel. Res." GridPane.rowIndex="5" />
+      <Label text="Tel. Cel." GridPane.rowIndex="6" />
+      <Label text="email" GridPane.rowIndex="7" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1">
          <children>
-            <Label text="Nome" GridPane.rowIndex="1" />
-            <Label text="CPF" GridPane.rowIndex="2" />
-            <Label text="RG" GridPane.rowIndex="3" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Orgao Emissor" GridPane.rowIndex="4" />
-            <Label text="Tel. Res." GridPane.rowIndex="5" />
-            <Label text="Tel. Cel." GridPane.rowIndex="6" />
-            <Label text="email" GridPane.rowIndex="7" />
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
-               <children>
-                  <RadioButton mnemonicParsing="false" selected="true" text="PF">
-                     <toggleGroup>
-                        <ToggleGroup fx:id="pessoa" />
-                     </toggleGroup>
-                  </RadioButton>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
-               <children>
-                  <RadioButton mnemonicParsing="false" text="PJ" toggleGroup="$pessoa" />
-               </children>
-            </HBox>
-            <Label text="Data Nasc." GridPane.rowIndex="8" />
-            <Label text="Recomendaçoes" GridPane.rowIndex="9" />
-            <Label text="Nome" GridPane.rowIndex="10" />
-            <Label text="Data. Nasc." GridPane.rowIndex="11" />
-         </children>
-      </GridPane>
-   </center>
-   <bottom>
-      <HBox alignment="BOTTOM_CENTER" spacing="5.0">
-         <children>
-            <Button mnemonicParsing="false" text="Salvar" BorderPane.alignment="CENTER" />
-            <Button mnemonicParsing="false" text="Cancelar" />
+            <RadioButton mnemonicParsing="false" selected="true" text="PF">
+               <toggleGroup>
+                  <ToggleGroup fx:id="pessoa" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="PJ" toggleGroup="$pessoa" />
          </children>
       </HBox>
-   </bottom>
+      <Label text="Data Nasc." GridPane.rowIndex="8" />
+      <Label text="Recomendações" GridPane.columnSpan="2" GridPane.rowIndex="10">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label text="Nome" GridPane.rowIndex="11" />
+      <Label text="Data. Nasc." GridPane.rowIndex="12" />
+      <HBox alignment="CENTER" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="14">
+         <children>
+            <Button contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Salvar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Cancelar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+         </children>
+      </HBox>
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="12" />
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <TextField prefHeight="25.0" prefWidth="40.0" />
+            <TextField prefHeight="25.0" prefWidth="102.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="151.0" layoutY="152.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <TextField prefHeight="25.0" prefWidth="40.0" />
+            <TextField prefHeight="25.0" prefWidth="102.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="131.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="281.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
    </padding>
-</BorderPane>
+</GridPane>
