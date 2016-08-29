@@ -19,36 +19,7 @@ public class Endereco {
 		this.ds_cep = new SimpleStringProperty(this, "ds_cep", ds_cep);		
 	}
 	
-	public StringProperty getDs_uf() {
-		return ds_uf;
-	}
-	public void setDs_uf(StringProperty ds_uf) {
-		this.ds_uf = ds_uf;
-	}
-	public StringProperty getDs_cidade() {
-		return ds_cidade;
-	}
-	public void setDs_cidade(StringProperty ds_cidade) {
-		this.ds_cidade = ds_cidade;
-	}
-	public StringProperty getDs_bairro() {
-		return ds_bairro;
-	}
-	public void setDs_bairro(StringProperty ds_bairro) {
-		this.ds_bairro = ds_bairro;
-	}
-	public StringProperty getDs_logradouro() {
-		return ds_logradouro;
-	}
-	public void setDs_logradouro(StringProperty ds_logradouro) {
-		this.ds_logradouro = ds_logradouro;
-	}
-	public StringProperty getDs_cep() {
-		return ds_cep;
-	}
-	public void setDs_cep(StringProperty ds_cep) {
-		this.ds_cep = ds_cep;
-	}
+
 	
 	
 	

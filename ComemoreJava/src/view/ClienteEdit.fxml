@@ -7,12 +7,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<GridPane alignment="CENTER" hgap="5.0" prefHeight="432.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ClienteController">
+<GridPane alignment="CENTER" hgap="5.0" prefHeight="432.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label text="Nome" GridPane.rowIndex="1" />
       <Label text="CPF" GridPane.rowIndex="2" />
       <Label text="RG" GridPane.rowIndex="3" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="clienteField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label text="Orgao Emissor" GridPane.rowIndex="4" />
@@ -42,11 +42,11 @@
             <Button contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Cancelar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="13" />
          </children>
       </HBox>
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="emissorField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="8" />
       <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="12" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <TextField fx:id="recomendacaoField" GridPane.columnIndex="1" GridPane.rowIndex="11" />
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
          <children>
             <TextField prefHeight="25.0" prefWidth="40.0" />

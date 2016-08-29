@@ -14,14 +14,18 @@ public class RootController {
 	@FXML
 	private void abrirClienteEdit() {
 		try {
+			ClienteController controller = new ClienteController();
+			
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("../view/ClienteEdit.fxml"));
 			GridPane clienteEdit = new GridPane();
+			loader.setController(controller);
 			clienteEdit = loader.load();
 			
 			FXMLLoader loader2 = new FXMLLoader();
 			loader2.setLocation(Main.class.getResource("../view/Endereco.fxml"));
 			GridPane endereco = new GridPane();
+			loader2.setController(controller);
 			endereco = loader2.load();
 			
 			HBox hBox = new HBox();
