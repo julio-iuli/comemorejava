@@ -1,4 +1,4 @@
-package model;
+package modelfxbeans;
 
 import java.time.LocalDate;
 
